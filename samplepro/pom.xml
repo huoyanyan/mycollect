@@ -7,4 +7,7 @@
   </parent>
   <artifactId>samplepro</artifactId>
   <packaging>pom</packaging>
+  <modules>
+  	<module>mixdemo</module>
+  </modules>
 </project>

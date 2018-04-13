@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<FindBugsFilter>
+     <Match>
+       <Class name="com.tls.Base64_url" />
+     </Match>
+     <Match>
+       <Class name="com.tls.tls_sigature" />
+     </Match>
+     <Match>
+       <Class name="com.tls.TLSUtils" />
+     </Match>
+     <Match>
+       <Bug pattern="DM_DEFAULT_ENCODING" />
+     </Match>
+</FindBugsFilter>
