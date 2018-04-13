@@ -169,12 +169,6 @@
 			<version>${freemarker.version}</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-			<version>1.5.8.RELEASE</version>
-		</dependency>
-
 		<!-- dynamic config -->
 		<dependency>
 			<groupId>commons-configuration</groupId>
@@ -209,18 +203,27 @@
 	      <artifactId>org.eclipse.paho.client.mqttv3</artifactId>
 	      <version>1.1.1</version>
 	    </dependency>
+	    
+	    
+	    <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>servlet-api</artifactId>
+		    <version>3.0-alpha-1</version>
+		    <scope>provided</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
-		<finalName>hessianSerTest</finalName>
+		<finalName>mixdemo</finalName>
 		<defaultGoal>compile</defaultGoal>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 					<compilerArguments>
 						<extdirs>src\main\webapp\WEB-INF\lib</extdirs>
 					</compilerArguments>
@@ -254,7 +257,7 @@
 				<configuration>
 					<failurePriority>5</failurePriority>
 					<failOnViolation>true</failOnViolation>
-					<targetJdk>1.7</targetJdk>
+					<targetJdk>1.8</targetJdk>
 					<verbose>true</verbose>
 					<outputEncoding>UTF-8</outputEncoding>
 					<!-- pmd规则配置文件 -->

@@ -2,12 +2,8 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.ping</groupId>
-    <artifactId>mytest</artifactId>
+    <artifactId>samplepro</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>webpro</artifactId>
-  <packaging>pom</packaging>
-  <modules>
-  	<module>springboot</module>
-  </modules>
+  <artifactId>spiderdemo</artifactId>
 </project>

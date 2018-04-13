@@ -1,26 +1,28 @@
 package com.ping.test.mqtt.paho.test2;
 
+import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 
 import com.alibaba.fastjson.JSON;
 
 public class ServerMQTTUtilTest {
 	static String deviceIdList;
-	public static void main(String[] args) {
+	public static void main(String[] args) throws UnsupportedEncodingException, MqttException, InterruptedException {
 		deviceIdList = "all";
 		// 设置推送消息体
 		String sendTime = System.currentTimeMillis() + "";
 		String msgType = "html";
-		String title = message.getTitle();
-		String content = message.getContent();
-		String createTime = message.getCreateTime();
+		String title = "";
+		String content = "";
+		String createTime = "";
 		Map<String, Object> data = new HashMap<String, Object>();
-		data.put("messageId", messageId);
+		data.put("messageId", "");
 		data.put("msgType", msgType);
 		data.put("title", title);
 		data.put("content", content);

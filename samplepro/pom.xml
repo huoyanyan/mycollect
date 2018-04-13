@@ -9,5 +9,6 @@
   <packaging>pom</packaging>
   <modules>
   	<module>mixdemo</module>
+  	<module>spiderdemo</module>
   </modules>
 </project>
