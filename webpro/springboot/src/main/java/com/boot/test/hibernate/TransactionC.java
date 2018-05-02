@@ -1,16 +1,22 @@
-package com.ping.test.hibernate;
+package com.boot.test.hibernate;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.service.ServiceRegistry;
+//import org.hibernate.Session;
+//import org.hibernate.SessionFactory;
+//import org.hibernate.Transaction;
+//import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+//import org.hibernate.cfg.Configuration;
+//import org.hibernate.service.ServiceRegistry;
 
 public class TransactionC extends TimerTask {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}/*
 	private SessionFactory sessionFactory;
 	private Session session;
 	private Transaction tx;
@@ -44,4 +50,4 @@ public class TransactionC extends TimerTask {
 			sessionFactory.close();
 		}
 	}
-}
+*/}

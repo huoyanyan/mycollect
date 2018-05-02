@@ -1,4 +1,4 @@
-package com.ping.test.hibernate;
+package com.boot.test.hibernate;
 
 public class Worker {
 

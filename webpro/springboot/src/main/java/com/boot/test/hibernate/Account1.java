@@ -1,11 +1,11 @@
-package com.ping.test.hibernate;
+package com.boot.test.hibernate;
 
-import javax.persistence.Version;
+//import javax.persistence.Version;
 
 public class Account1 {
 	Integer Balance;
 	
-    @Version       // 版本
+//    @Version       // 版本
     private Integer version;
 
 	public Integer getBalance() {

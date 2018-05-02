@@ -1,18 +1,18 @@
-package com.ping.test.hibernate;
+package com.boot.test.hibernate;
 
-import org.hibernate.LockMode;
-import org.hibernate.Query;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.service.ServiceRegistry;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+//import org.hibernate.LockMode;
+//import org.hibernate.Query;
+//import org.hibernate.Session;
+//import org.hibernate.SessionFactory;
+//import org.hibernate.Transaction;
+//import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+//import org.hibernate.cfg.Configuration;
+//import org.hibernate.service.ServiceRegistry;
+//import org.junit.After;
+//import org.junit.Before;
+//import org.junit.Test;
 
-public class HibernateTest {
+public class HibernateTest {/*
 
 	private SessionFactory sessionFactory;
 	private Session session;
@@ -36,9 +36,9 @@ public class HibernateTest {
 		sessionFactory.close();
 	}
 
-	/**
+	*//**
 	 * evict: 从 session 缓存中把指定的持久化对象移除
-	 */
+	 *//*
 	@Test
 	public void testUPGRADENOWAIT() {
 		System.out.println("开始事务A");
@@ -51,4 +51,4 @@ public class HibernateTest {
 		System.out.println("A支取100元，剩余金额：" + account.getBalance());
 	}
 	
-}
+*/}
