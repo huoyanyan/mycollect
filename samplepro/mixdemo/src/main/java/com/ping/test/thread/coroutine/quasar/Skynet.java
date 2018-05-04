@@ -48,20 +48,15 @@ public class Skynet {
 	}
 
 	public static void main(String[] args) throws Exception {
-		int k = 1_000_000_000;
-		System.out.println(k);
-		
-		int k1 = 1_0000_0000;
-		System.out.println(k1);
-//		for (int i = 0; i < RUNS; i++) {
-//			long start = System.nanoTime();
-//
-//			Channel<Long> c = Channels.newChannel(BUFFER);
-//			new Fiber(() -> skynet(c, 0, 1_000_000, 10)).start();
-//			long result = c.receive();
-//
-//			long elapsed = (System.nanoTime() - start) / 1_000_000;
-//			System.out.println((i + 1) + ": " + result + " (" + elapsed + " ms)");
-//		}
+		for (int i = 0; i < RUNS; i++) {
+			long start = System.nanoTime();
+
+			Channel<Long> c = Channels.newChannel(BUFFER);
+			new Fiber(() -> skynet(c, 0, 1_000_000, 10)).start();
+			long result = c.receive();
+
+			long elapsed = (System.nanoTime() - start) / 1_000_000;
+			System.out.println((i + 1) + ": " + result + " (" + elapsed + " ms)");
+		}
 	}
 }
