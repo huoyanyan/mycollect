@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee  http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- 新增的dwr配置 -->  
+	<servlet>
+		<servlet-name>dwr-invoker</servlet-name>
+		<servlet-class>org.directwebremoting.spring.DwrSpringServlet</servlet-class>
+		<init-param>    
+            <param-name>debug</param-name>    
+            <param-value>true</param-value>    
+          </init-param>    
+          <init-param>    
+            <param-name>activeReverseAjaxEnabled</param-name>    
+            <param-value>true</param-value>    
+          </init-param>    
+          <init-param>    
+            <param-name>pollAndCometEnabled</param-name>    
+            <param-value>true</param-value>    
+          </init-param>    
+          <init-param>    
+            <param-name>crossDomainSessionSecurity</param-name>    
+            <param-value>false</param-value>    
+          </init-param>    
+          <init-param>    
+            <param-name>allowScriptTagRemoting</param-name>    
+            <param-value>true</param-value>    
+          </init-param>    
+          <load-on-startup>1</load-on-startup>
+	</servlet>  
+   
+    <servlet-mapping>  
+        <servlet-name>dwr-invoker</servlet-name>  
+        <url-pattern>/dwr/*</url-pattern>  
+    </servlet-mapping>
+    
+    
+</web-app>

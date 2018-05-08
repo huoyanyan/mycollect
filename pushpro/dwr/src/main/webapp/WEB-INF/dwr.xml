@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<!DOCTYPE dwr PUBLIC    
+    "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"    
+    "http://directwebremoting.org/schema/dwr30.dtd">
+<dwr>
+	<allow>
+		<!-- value="com.gtcity.web.util.MessagePush"代表对应的java类，javascript="MessagePush"代表页面引用的js名称，dwr目的就是要让js调用java方法 -->
+		<create javascript="MessagePush" creator="new">
+			<param name="class" value="com.dwr.push.demo.MessagePush"></param>
+		</create>
+	</allow>
+</dwr>   
