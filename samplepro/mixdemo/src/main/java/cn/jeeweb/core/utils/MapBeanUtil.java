@@ -10,6 +10,7 @@ import java.lang.reflect.Method;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -84,15 +85,10 @@ public class MapBeanUtil {
 
 		if (fieldname.length() > 0) {
 			if (PropertyUtils.isWriteable(obj, fieldname)) {
-				Class<?> valueclass = BeanUtils.findPropertyType(fieldname, obj.getClass());
+				Class<?> valueclass = BeanUtils.findPropertyType(fieldname, obj.getClass().getClasses());
 				Object rObject = Caster(valueclass, String.valueOf(value));
 				PropertyUtils.setProperty(obj, fieldname, rObject);
 			}
-
-			// String methodname = "set" + fieldname.substring(0,
-			// 1).toUpperCase() + fieldname.substring(1, fieldname.length());
-			// Method m = obj.getClass().getMethod(methodname, valueClass);
-			// m.invoke(obj, value);
 		}
 
 	}

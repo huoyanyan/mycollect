@@ -7,4 +7,7 @@
   </parent>
   <artifactId>utilpro</artifactId>
   <packaging>pom</packaging>
+  <modules>
+  	<module>opensourceUtil</module>
+  </modules>
 </project>

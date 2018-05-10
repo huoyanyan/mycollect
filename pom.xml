@@ -202,4 +202,18 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
+	<properties>
+		<!--maven properties -->
+		<maven.test.skip>true</maven.test.skip>
+		<downloadSources>true</downloadSources>
+		<!-- compiler settings properties -->
+		<java_source_version>1.6</java_source_version>
+		<java_target_version>1.6</java_target_version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<file_encoding>UTF-8</file_encoding>
+		<spring-version>3.1.2.RELEASE</spring-version>
+		<jetty_verion>8.1.7.v20120910</jetty_verion>
+		<otter_canal_version>1.0.25</otter_canal_version>
+	</properties>
 </project>
