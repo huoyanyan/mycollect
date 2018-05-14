@@ -10,5 +10,6 @@
   <modules>
   	<module>mixdemo</module>
   	<module>spiderdemo</module>
+  	<module>jvmsandboxdemo</module>
   </modules>
 </project>
