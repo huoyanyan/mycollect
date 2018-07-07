@@ -11,7 +11,7 @@ public class TestAspect2 {
     public void pkgGreetTo(){
         System.out.println("--pkgGreetTo() executed!--");
     }
-    @Before("target(org.aspectj.demo1.NaiveWaiter) || TestNamePointcut.inPkgGreetTo()")
+    @Before("target(org.aspectj.demo1.test2.NaiveWaiter) || TestNamePointcut.inPkgGreetTo()")
     public void pkgGreetToNotnaiveWaiter(){
         System.out.println("--pkgGreetToNotnaiveWaiter() executed!--");
     }

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Aspect
 public class TestAspect3 {
-	@Around("execution(* greetTo(..)) && target(org.aspectj.demo1.NaiveWaiter)")
+	@Around("execution(* greetTo(..)) && target(org.aspectj.demo1.test3.NaiveWaiter)")
 	public void joinPointAccess(ProceedingJoinPoint pjp) throws Throwable {
 		System.out.println("---joinPointAccess---");
 		System.out.println("args[0]:" + pjp.getArgs()[0]);

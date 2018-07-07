@@ -1,6 +1,5 @@
 package org.aspectj.demo1.test5;
 
-import org.aspectj.demo1.Waiter;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;

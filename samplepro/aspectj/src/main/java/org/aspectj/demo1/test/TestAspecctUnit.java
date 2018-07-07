@@ -1,6 +1,5 @@
 package org.aspectj.demo1.test;
 
-import org.aspectj.demo1.Waiter;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
